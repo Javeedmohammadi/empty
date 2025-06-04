@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.menu-item {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+  .font-style {
+    font-family: 'Inter', sans-serif;;
+  }
+
+  
+@layer components{
+  .active-button{
+    @apply bg-[#00893F] border border-[#00893F] text-white h-10 w-20 text-center
+  }
+  .disable-button{
+    @apply bg-white text-black border border-[#00893F] h-10 w-20 text-center
+  }
+
+  .custom-table-style {
+    @apply w-full text-sm text-left text-gray-500 dark:text-gray-400 overflow-x-auto;
+}
+
+.custom-table-style thead {
+    @apply text-xs text-gray-700 uppercase border-b border-dashed border-gray-200 dark:bg-gray-700 dark:text-gray-400;
+}
+
+.custom-table-style tbody tr {
+    @apply bg-white border-b border-dashed border-gray-200 dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600;
+}
+
+.custom-table-style th {
+    @apply px-6 py-3;
+}
+
+.custom-table-style td {
+    @apply px-6 py-4;
+}
+}
